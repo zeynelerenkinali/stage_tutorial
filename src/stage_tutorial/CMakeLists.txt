@@ -125,6 +125,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+
+add_executable(reactive_navigation src/reactive_navigation.cpp)
+target_link_libraries(reactive_navigation ${catkin_LIBRARIES})
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/stage_tutorial.cpp
