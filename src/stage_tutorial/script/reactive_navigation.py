@@ -18,8 +18,8 @@ class ReactiveNavigation():
         self._cmd_topic = self.active_robot+"/cmd_vel"
         self._laser_topic = self.active_robot+"/base_scan"
 
-        self.rospy_sub_laser = rospy.Subscriber("base_scan", LaserScan, self.laser_cb, queue_size=1)
-        self.pub_CMD = rospy.Publisher("cmd_vel", Twist, queue_size=1)
+        self.rospy_sub_laser = rospy.Subscriber(self._laser_topic, LaserScan, self.laser_cb, queue_size=1)
+        self.pub_CMD = rospy.Publisher(self._cmd_topic, Twist, queue_size=1)
         self.rate = rospy.Rate(5)
 
     def laser_cb(self, msg):
