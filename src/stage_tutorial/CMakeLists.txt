@@ -126,8 +126,8 @@ include_directories(
 )
 
 
-add_executable(reactive_navigation src/reactive_navigation.cpp)
-target_link_libraries(reactive_navigation ${catkin_LIBRARIES})
+# add_executable(reactive_navigation src/reactive_navigation.cpp)
+# target_link_libraries(reactive_navigation ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

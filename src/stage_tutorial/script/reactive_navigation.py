@@ -21,11 +21,11 @@ class ReactiveNavigation():
             self.obstacle_distance = min(self.laser_msg.ranges)
 
             if self.obstacle_distance > 1.0:
-                self.cmd_vel.linear.x = 1.0
+                self.cmd_vel.linear.x = 2.0
                 self.cmd_vel.angular.z = 0.0
             else:
                 self.cmd_vel.linear.x = 0.0
-                self.cmd_vel.angular.z = 1.0
+                self.cmd_vel.angular.z = -2.0
 
     def run(self):
         while not rospy.is_shutdown():

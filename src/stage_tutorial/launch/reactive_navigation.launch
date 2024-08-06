@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+
+ <arg name="config_name" default="simple_robot"/>
+ <node pkg="stage_tutorial" type="reactive_navigation.py" name="reactive_controller_py" output="screen" cwd="node">
+ <rosparam file="$(find stage_tutorial)/config/$(arg config_name).yaml" command="load"/>
+ </node>
+
+</launch> 
+
