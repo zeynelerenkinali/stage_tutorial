@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/eren/simulation_ws/src/stage_tutorial/build/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/eren/simulation_ws/src/stage_tutorial/build/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/eren/simulation_ws/src/stage_tutorial/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/eren/simulation_ws/src/stage_tutorial/build'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/eren/simulation_ws/src/stage_tutorial/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/eren/simulation_ws/src/stage_tutorial:$ROS_PACKAGE_PATH"
