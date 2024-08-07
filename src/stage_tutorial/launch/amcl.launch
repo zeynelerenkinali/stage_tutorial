@@ -27,10 +27,10 @@
     <param name="gui_publish_rate" value="10.0"/>
   </node>
 
-  
+ <arg name="map_name" default="map"/>  
 
   <!-- Launch the map_server to provide the static map -->
-  <node pkg="map_server" type="map_server" name="map_server" output="screen" args="$(find stage_tutorial)/maps_slam/map.yaml">
+  <node pkg="map_server" type="map_server" name="map_server" output="screen" args="$(find stage_tutorial)/maps_slam/$(arg map_name).yaml">
   </node>
 
 </launch>
